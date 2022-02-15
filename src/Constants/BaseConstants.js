@@ -1,0 +1,1 @@
+export const taskIconClass = 'feather f-30 m-r-10 text-c-yellow icon-check-circle'
