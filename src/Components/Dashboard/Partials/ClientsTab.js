@@ -1,30 +1,30 @@
 import React from "react";
-
+import { clientsTabContentHeadings } from "../../../Constants/DashboardConstants";
 function ClientsTab() {
   return (
     <table className="table table-hover">
       <thead>
         <tr>
-          <th>User</th>
-          <th>Activity</th>
-          <th>Time</th>
-          <th>Status</th>
+          <th>{clientsTabContentHeadings.clientId}</th>
+          <th>{clientsTabContentHeadings.client}</th>
+          <th>{clientsTabContentHeadings.startedAt}</th>
+          <th>{clientsTabContentHeadings.status}</th>
           <th className="text-right"></th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td>
-            <h6 className="m-0">Vivek</h6>
+            <h6 className="m-0">101</h6>
           </td>
           <td>
             <h6 className="m-0">Engineer AI</h6>
           </td>
           <td>
-            <h6 className="m-0">3:28 PM</h6>
+            <h6 className="m-0">2019-07-06</h6>
           </td>
           <td>
-            <h6 className="m-0 text-c-green">Done</h6>
+            <h6 className="m-0 text-c-blue">Active</h6>
           </td>
           <td className="text-right">
             <i className="fas fa-circle text-c-green f-10"></i>
@@ -33,51 +33,34 @@ function ClientsTab() {
 
         <tr>
           <td>
-            <h6 className="m-0">Albert Andersen</h6>
+            <h6 className="m-0">103</h6>
           </td>
           <td>
-            <h6 className="m-0">Jumps over the lazy</h6>
+            <h6 className="m-0">Cox Auto</h6>
           </td>
           <td>
-            <h6 className="m-0">2:37 PM</h6>
+            <h6 className="m-0">2021-11-15</h6>
           </td>
           <td>
-            <h6 className="m-0 text-c-red">Missed</h6>
+            <h6 className="m-0 text-c-blue">Active</h6>
           </td>
           <td className="text-right">
-            <i className="fas fa-circle text-c-red f-10"></i>
+            <i className="fas fa-circle text-c-green f-10"></i>
           </td>
         </tr>
 
         <tr>
           <td>
-            <h6 className="m-0">Silje Larsen</h6>
+            <h6 className="m-0">102</h6>
           </td>
           <td>
-            <h6 className="m-0">Dog the quick brown</h6>
+            <h6 className="m-0">Sutherland</h6>
           </td>
           <td>
-            <h6 className="m-0">10:23 AM</h6>
+            <h6 className="m-0">2019-01-22</h6>
           </td>
           <td>
-            <h6 className="m-0 text-c-purple">Delayed</h6>
-          </td>
-          <td className="text-right">
-            <i className="fas fa-circle text-c-purple f-10"></i>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <h6 className="m-0">Ida Jorgensen</h6>
-          </td>
-          <td>
-            <h6 className="m-0">The quick brown fox</h6>
-          </td>
-          <td>
-            <h6 className="m-0">4:28 PM</h6>
-          </td>
-          <td>
-            <h6 className="m-0 text-c-green">Done</h6>
+            <h6 className="m-0 text-c-blue">Active</h6>
           </td>
           <td className="text-right">
             <i className="fas fa-circle text-c-green f-10"></i>
