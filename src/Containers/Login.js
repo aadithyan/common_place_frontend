@@ -15,7 +15,7 @@ function Login() {
             <div className="mb-4">
               <i className="feather icon-unlock auth-icon"></i>
             </div>
-            <h3 className="mb-4">Login</h3>
+            <h3 className="mb-4">{ process.env.REACT_APP_BASE_URL }</h3>
             <div className="input-group mb-3">
               <input type="email" className="form-control" placeholder="Email" />
             </div>
