@@ -21,7 +21,6 @@ function LoginForm() {
         history("/dashboard");
       })
       .catch((error) => {
-        console.log(error.response.data.data.message);
         setAuthError(error.response.data.data.message);
       });
   }
@@ -71,7 +70,6 @@ function LoginForm() {
                   required
                 />
               </div>
-
               {errors.password && (
                 <div className="form-group text-left">
                   <div className="input-group mb-3">
@@ -81,7 +79,6 @@ function LoginForm() {
                   </div>
                 </div>
               )}
-
               {authError && (
                 <div className="form-group text-left">
                   <div className="input-group mb-3">
