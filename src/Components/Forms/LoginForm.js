@@ -23,7 +23,6 @@ function LoginForm() {
       .catch((error) => {
         console.log(error.response.data.data.message);
         setAuthError(error.response.data.data.message);
-        console.log(authError);
       });
   }
 
